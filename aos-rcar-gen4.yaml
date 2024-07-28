@@ -83,8 +83,8 @@ common_data:
       rev: "v0.1.0"
 
     - type: git
-      url: "https://github.com/iusyk/meta-aos-rcar-gen4"
-      rev: "update-moving-from-aosbox"
+      url: "https://github.com/Mishytca/meta-aos-rcar-gen4"
+      rev: "IUsyk_update-moving-from-aosbox"
 
   # Common configuration options for all yocto-based domains
   common_conf: &COMMON_CONF
