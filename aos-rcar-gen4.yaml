@@ -441,13 +441,13 @@ parameters:
   VIS_DATA_PROVIDER:
     desc: "Specifies plugin for VIS automotive data"
     renesassimulator:
-      default: false
+      default: true
       overrides:
         variables:
           AOS_VIS_DATA_PROVIDER: "renesassimulatoradapter"
 
     telemetryemulator:
-      default: true
+      default: false
       overrides:
         variables:
           AOS_VIS_DATA_PROVIDER: "telemetryemulatoradapter"
@@ -491,7 +491,7 @@ parameters:
                   ]
                 - [
                     AOS_HOSTS,
-                    "10.0.0.1=wwwivi 10.0.0.1=Node0-QM 10.0.0.2=Node1-QM",
+                    "10.0.0.1=wwwivi 10.0.0.1=Node0-QM 10.0.0.2=Node1-QM 192.168.5.85=cockpit",
                   ]
                 - [AOS_VIS_DATA_PROVIDER, "%{AOS_VIS_DATA_PROVIDER}"]
 
